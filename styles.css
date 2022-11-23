@@ -53,7 +53,7 @@
   font-size: 2rem;
   font-weight: 700;
   transition: ease-in-out 0.3s;
-  width: var(--size100);
+  width: var(--size150);
   display: flex;
   align-items: center;
 }
@@ -68,7 +68,7 @@
   font-weight: 500;
 
   text-transform: capitalize;
-  margin-right: var(--size20);
+  margin-right: var(--size40);
   line-height: 2.75rem;
 }
 .nav-link.highlighted a {
@@ -93,10 +93,14 @@
 .brandsContainer {
   margin-top: var(--size20);
   display: flex;
+  justify-content: space-between;
+  
+  flex-wrap: wrap;
 }
 
 .slogan {
   padding: var(--size40) 0;
+  align-self: center;
 }
 
 .slogan h2 {
@@ -129,31 +133,123 @@
   padding-left: var(--size20);
 }
 
+.websitesContainer{
+  width: 500px;
+}
+.websites{
+width: -moz-fit-content;
+width: fit-content;
+position: relative;
+
+}
+
+.logo{
+  background: var(--white);
+  
+  border-radius: 50%;
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.25);
+  text-align: center;
+ 
+}
+
+.asana{
+  position: relative;
+  top: 56px;
+  left: 395px;
+}
+
+.atlassian{
+  position: relative;
+  bottom: 21px;
+  right: -166px;
+}
+.google{
+  position: absolute;
+  right: 0px;
+  bottom: 289px;
+}
+
+
+.google-A{
+  position: absolute;
+  right: -111px;
+  bottom: 43px;
+}
+
+.calender{
+  position: relative;
+  bottom: -161px;
+  right: -367px;
+}
+
+.paypal{
+  position: relative;
+  bottom: 38px;
+}
+.weave{
+  position: relative;
+  bottom: 134px;
+  right: -267px;
+}
+
+ .logo .regular{
+  height: 48px;
+  width: 48px;
+margin: 16px;
+ }
+.logo .small{
+  height: 40px;
+  width: 40px;
+  margin:10px;
+} 
+
 .background {
-  background-color: #e1e7ef;
+ display: none;
   width: 100%;
   max-width: 100%;
-  height: 390px;
+  height: 800px;
   position: relative;
+display: flex;
 }
+
+
+
 .background:after {
   content: "";
   position: absolute;
   bottom: 0;
   right: 0;
+ 
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 0 0 100px 2036px;
   border-color: transparent transparent var(--white) transparent;
 }
-.content {
-  background-image:  linear-gradient(
-    312.73deg,
-    rgba(217, 217, 217, 0.44) 17.61%,
-    rgba(217, 217, 217, 0) 55.85%
-  );
+.gradient {
+  background-image:  var(--grad);
   width: 100%;
   height: 100%;
- 
+ display: none;
+}
+
+ .solid{
+  display: none;
+  background: var(--color-dark);
+  width: 11.5%;
+  position: relative;
+} 
+
+.solid:after{
+content: "";
+position: absolute;
+bottom: 0;
+right: 99%;
+
+width: 0;
+height: 100%;
+border-style: solid;
+border-width: 800px 100px 0 0;
+border-color: transparent var(--color-dark) transparent transparent;
 }
