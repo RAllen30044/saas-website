@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+.hubspot{
+    flex-direction: column;
+    margin-top: 200px;
+}
+.hubspot-text{
+    text-align: center;
+}
+
+    .hubspot-title{
+        align-self: center;
+    }
+    
+}
