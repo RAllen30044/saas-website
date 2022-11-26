@@ -269,12 +269,7 @@ border-color: transparent var(--color-dark) transparent transparent;
   text-align: center;
   margin-top: 15.625rem;
 }
-.key-benefits h2{
- font-weight: 700;
- color: var(--black);
- font-size: 26px;
- line-height: 31px;
-}
+
 .cardsContainer{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
@@ -296,6 +291,21 @@ border-color: transparent var(--color-dark) transparent transparent;
   height: var(--size50);
   width: var(--size50);
 }
+.sketch{
+
+  background-color: #01C9A7;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--white);
+  padding: 4px 10px;
+}
+
+
 .banner-section{
   margin-top: var(--size150);
   display: flex;
@@ -330,6 +340,9 @@ border-color: transparent var(--color-dark) transparent transparent;
 .why-front{
   padding: var(--size100) 0;
 }
+
+
+
 
 .why{
   text-align: center;
@@ -497,4 +510,68 @@ font-size: 20px;
 font-weight: 700;
 font-style: normal;
 text-align: center;
+}
+
+.pricing{
+  margin-top: var(--size100);
+ 
+}
+
+.pricingContainer{
+ display: flex;
+ margin-top: var(--size50);
+}
+
+.pricingVideo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 450px;
+  width:60%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  
+  
+  padding: 40px;
+}
+
+.bigNumber{
+  font-size: var(--size50);
+  color: var(--black);
+}
+
+
+.pCardsContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+  gap: var(--size20);
+  justify-content: center;
+  width: 100%;
+ 
+}
+.pCard{
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+
+  text-align: left;
+  padding: 20px;
+  width: 100%;
+}
+
+.pCard img{
+  height: var(--size50);
+  width: var(--size50);
+}
+
+.pricingVideo hr{
+  margin: 0;
+}
+.pricingVideo .comment{
+margin: var(--size30) 0;
+font-size: 16px;
+}
+
+.caption{
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 10px;
 }
