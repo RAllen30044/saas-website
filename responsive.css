@@ -1,14 +1,300 @@
-@media screen and (max-width: 768px) {
-.hubspot{
-    flex-direction: column;
-    margin-top: 200px;
-}
-.hubspot-text{
-    text-align: center;
+@media screen and (max-width: 1023px) {
+.container{
+  margin: 0;
+  padding: 0;
 }
 
-    .hubspot-title{
-        align-self: center;
+  .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+    transition: ease-in-out 0.3s;
+  }
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  
+    width: 120px;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+  }
+  [aria-expanded="true"] {
+    background-color: white;
+    display: flex;
+width: 100%;
+height: 90px;
+margin: 0;
+padding: 0;
+right: 0;
+top: 0;
+align-items: center;
+justify-content: end;
+  }
+  [aria-expanded="true"]~ .navbar-brand{
+    z-index: 1;
+  }
+
+  [aria-expanded="false"] ~ .navbar-nav {
+    display: none;
+  }
+
+  [aria-expanded = "true"] ~ .navbar-nav{
+    position: absolute;
+    border-top: 1px solid #E7E7E7;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 900%;
+    top: 90px;
+    background: white;
+    z-index: 100;
+ flex-direction: column;
+ gap: 70px;
+  }
+ .thisNav{
+    
+     padding-top: 50px; 
+    }
+    [aria-expanded = "true"] ~ .container{
+      margin: 0;
+padding: 0;
+background: white;
+   
+    }
+
+[aria-expanded = "true"]  span.open{
+position: relative;
+right: 50px;
+   
     }
     
+
+ .close{
+  display: none;
+ }
+  
+
+  [aria-expanded = "true"]  .navbar {
+position: initial;
+background-color: var(--white);
+  }
+
+.mainContent{
+  margin-top: 100px;
+}
+
+  .brandsContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .websitesContainer{
+align-self: center;
+  }
+.cardsContainer{
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}
+.key-benefits{
+  margin-top: 50px;
+}
+
+.connect-list{
+  margin: 50px 0px;
+}
+.tag-line{
+display: flex;
+flex-direction: column;
+}
+.tag-line h2{
+text-align: center;
+}
+.tag-line .playVideo-btn{
+ 
+  align-self: center;
+}
+.banner-section{
+  height: 500px;
+}
+.banner{
+ height: 100%;
+ margin-top: 50px;
+}
+.banner-wrapper{
+  display: flex;
+  width: 100%;
+ 
+  flex-wrap: wrap;
+
+}
+.pricingVideo{
+  width: 100%;
+  align-items: center;
+text-align: center;
+}
+
+.why{
+  margin-top: 150px;
+}
+.lady-on-graphics{
+  width:75%;
+  align-self: center;
+}
+
+  .hubspot {
+    flex-direction: column;
+    margin-top: 200px;
+  }
+  .hubspot-text {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .hubspot-title {
+    align-self: center;
+  }
+  .pricingVideo {
+    height: 450px;
+    flex-shrink: 0;
+  }
+  .pricingContainer {
+    flex-direction: column;
+  }
+  .resources{
+    width: 100%;
+  }
+.pCardsContainer{
+  grid-template-columns: repeat(auto-fit, minmax(330px,1fr));
+  margin-top: 30px;
+}
+
+  .hireUs{
+    flex-direction: column;
+  }
+  .text-section{
+    flex-direction: row;
+    gap: 110px;
+  }
+  .naming{
+    margin: 10px;
+  }
+  .tell-us{
+    margin-top: 10px;
+  }
+
+  .company-contact{
+    margin-right: 40px;
+    width: 50%;
+
+  }
+.information{
+  grid-template-columns: repeat(auto-fit, minmax(206px, 1fr));
+  gap: 40px;
+  
+}
+
+
+}
+@media  screen and (max-width: 767px) {
+  [aria-controls="navbarDropdown"] .close{
+    padding-right: 50px;
+  }
+  [aria-expanded="false"] .close{
+    display: none;
+  }
+  
+  [aria-expanded="true"] .close{
+    display: inline-block;
+  }
+  [aria-expanded="true"] .open{
+    display: none;
+  }
+  .thisNav{
+    flex-direction: column;
+    align-items: center;
+  }
+
+.slogan{
+  width: 75%;
+}
+  .websitesContainer{
+    width: 100%;
+    
+  }
+.companies{
+  margin: 100px 0;
+}
+  .companies ul{
+    flex-direction: column;
+    align-items: center;
+  }
+  .companies li{
+    width: 150px;
+  }
+
+  .cardsContainer{
+    padding: 0 25px;
+  }
+  
+  .connect{
+    position: relative;
+    bottom: 5px;
+    display: block;
+    margin-right: 30px;
+  }
+  .connect-list{
+    
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding-left: 60px;
+  }
+  
+  .connect-wrapper{
+    display: flex;
+    width: 100%;
+  }
+  .connect:before,
+.connect:after {
+  
+content: normal;
+ 
+ 
+}
+
+ .nav-button{
+  position: relative;
+  right: 18px;
+  bottom: 55px;
+}
+.text-section{
+  flex-direction: column;
+  gap: 0;
+}
+.company-contact {
+  margin-right: 0;
+}
+  .footer-top{
+    flex-direction: column;
+align-items: center;
+text-align: center;
+  }
+  .naming{
+    flex-direction: column;
+    gap: 20px;
+  }
+.bottom-right{
+  flex-direction: column;
+}
+
+.privacy .highlighted{
+  display: none;
+}
+
+  .top{
+    flex-direction: column;
+  }
 }

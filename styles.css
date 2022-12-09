@@ -7,17 +7,22 @@
   right: 0;
   z-index: 500;
   transition: ease-in-out 0.3s;
+
 }
 
 .navbar.sticky {
   background: var(--white);
   box-shadow: 0px 0px var(--size20) rgba(48, 63, 100, 0.2);
+  padding-bottom: 20px;
 }
 
 .navbar.sticky .navbar-toggler span,
 .navbar.sticky .navbar-brand,
 .navbar.sticky .navbar-nav a {
   color: var(--font-color-base);
+}
+.navbar.sticky .nav-button a{
+  color: var(--white);
 }
 /* here */
 
@@ -91,6 +96,9 @@
 [aria-controls="navbarDropdown"] {
   display: none;
 }
+.thisNav{
+display: flex;
+}
 
 .brands{
   margin-top: 30px;
@@ -101,13 +109,14 @@
   margin-top: var(--size20);
   display: flex;
   justify-content: space-between;
-  
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
 .slogan {
   padding: var(--size40) 0;
   align-self: center;
+  width: 50%;
 }
 
 .slogan h2 {
@@ -141,7 +150,7 @@
 }
 
 .websitesContainer{
-  width: 500px;
+  width: 50%
 }
 .websites{
 width: -moz-fit-content;
@@ -220,7 +229,9 @@ margin: 16px;
 display: flex;
 bottom: 430px;
 z-index: -1;
-
+right: 0;
+top: 0;
+left: 0;
 }
 
 
@@ -270,6 +281,7 @@ border-color: transparent var(--color-dark) transparent transparent;
 }
 
 .cardsContainer{
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
   gap: var(--size20);
@@ -318,10 +330,12 @@ border-color: transparent var(--color-dark) transparent transparent;
 .banner-wrapper{
   display: flex;
   width: 100%;
-  margin-top: 117px;
-  
+ 
+ 
 
 }
+
+
 .banner{
   background-image: url(./saas-project-assets/banners/banner_one.jpg);
  background-position: center;
@@ -330,12 +344,20 @@ border-color: transparent var(--color-dark) transparent transparent;
 }
 
 
-
-.banner, .tag-line{
-  width: 100%;
+.tag-line{
   
+  width: 100%;
 
 }
+
+.tag-line h2{
+  font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 31px;
+}
+
+
 .why-front{
   padding: var(--size100) 0;
 }
@@ -348,7 +370,7 @@ border-color: transparent var(--color-dark) transparent transparent;
 }
 .connect-list{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .connect{
@@ -437,7 +459,7 @@ content: "";
 }
 
 .lady-on-graphics{
-  max-height: 560px;
+  height: 560px;
   width: 100%;
   position: relative;
 }
@@ -496,8 +518,9 @@ color: #677788;
 .companies ul{
   display: flex;
   justify-content: space-between;
-  gap: 120px;
+  gap: 50px;
   margin-top: 35px;
+
 }
 
 .companies{
@@ -510,10 +533,31 @@ font-weight: 700;
 font-style: normal;
 text-align: center;
 }
+.companies li{
+  width: 100%;
+}
 
 .pricing{
   
  padding: var(--size100) 0;
+}
+.pricing h2{
+  font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+color: var(--black);
+}
+
+.pricing p{
+  font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+}
+
+.headline, .headline-text{
+text-align: center;
 }
 
 .pricingContainer{
@@ -541,12 +585,16 @@ text-align: center;
 
 .pCardsContainer{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
   gap: var(--size20);
   justify-content: center;
   width: 100%;
- 
+  margin-left: 30px;
 }
+  .tell-us{
+    margin-top: 20px;
+  }
+
 .pCard{
   background: #FFFFFF;
   border: 1px solid #FFFFFF;
@@ -590,6 +638,12 @@ font-size: 16px;
   
 
 }
+
+
+.hire-us-comments{
+  width: 100%;
+}
+
 .hire-us-comments h2, .hire-us-comments .comment, .people h3{
   color: var(--white);
 }
@@ -617,11 +671,13 @@ line-height: 24px;
 .text-section{
   width: 100%;
   padding: 70px;
+  display: flex;
+  flex-direction: column;
 }
 .images{
   display: flex;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 .images img{
@@ -638,6 +694,10 @@ img.large{
   height: 60px;
   width: 60px;
 }
+.people{
+  width: 100%;
+}
+
 .people h3{
   margin-top: 50px;
   margin-bottom: 5px;
@@ -734,8 +794,9 @@ font-size: 14px;
 }
 
 .privacy h3 .highlighted{
-  text-decoration-color: var(--color-secondary);
+  
   -moz-text-decoration-color: var(--color-secondary);
+  text-decoration-color: var(--color-secondary);
 }
 
 
@@ -744,7 +805,7 @@ font-size: 14px;
   width: 137px;
   color: var(--white);
   background-color: var(--color-secondary);
-  border-radius: 30px;
+ 
   text-align: center;
   line-height: 48px;
   border: none;
@@ -753,11 +814,15 @@ font-size: 14px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+ border-radius: 30px;
+
 }
 
 .footer-top{
+
 padding: 50px 20px;
 display: flex;
+flex-direction: row;
 }
 
 .hiring{
@@ -767,23 +832,36 @@ display: flex;
  font-weight: 600;
  line-height: 10px;
  padding: 2px 4px;
- border-radius: 3px;
+ 
  font-size: 8px;
  color: var(--white);
  -webkit-border-radius: 3px;
  -moz-border-radius: 3px;
  -ms-border-radius: 3px;
  -o-border-radius: 3px;
+ border-radius: 3px;
 }
+
 
 .company-contact{
-  margin-right: 20px;
+  margin-right: 61px;
+  width: 25%;
+  margin-bottom: 40px;
+}
+.information{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(153px, 1fr));
+  width: 100%;
+
+  
+}
+.company, .features, .documentation {
+  width: 100%;
 }
 
-.company, .features, .documentation, .resources{
-  margin-right: 40px;
+.resources{
+  justify-self: flex-end;
 }
-
 
 .footer-top h2{
   margin: 0;
@@ -806,7 +884,10 @@ margin: 10px 0;
   align-items: center;
 }
 
-
+.bottom-right{
+  display: flex;
+gap: 20px;
+}
 
 .social-media{
   display: flex;
@@ -820,11 +901,12 @@ margin: 10px 0;
   align-items: center;
   height: 30px;
   width: 30px;
-  border-radius: 5px;
+
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+    border-radius: 5px;
 }
 .Google{
   background-color: #677788;
@@ -839,4 +921,46 @@ margin: 10px 0;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+.siteLocation{
+  height: 30px;
+ border: none;
+ font-size: var(--size18);
+ background-color: #ECF2FF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.locatonContainer{
+  display: flex;
+  gap: 10px;
+}
+.flag{
+  margin-right: 10px;
+  font-size: var(--size18);
+  
+}
+
+.siteLocation h3{
+  margin-left: 5px;
+}
+.legal{
+  text-align: center;
+  
+font-size: 16px;
+line-height: 22px;
+align-self: center;
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.legal h3 , .legal p{
+  width: 75%;
+  font-weight: 400;
+  align-self: center;
+  font-style: normal;
+  font-family: 'Source Sans Pro', sans-serif;
 }

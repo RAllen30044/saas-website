@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
     <title>Front</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,8 +14,15 @@
     <link rel="shortcut icon" href="./title-logo.svg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="default.css" />
@@ -23,7 +30,7 @@
     <link rel="stylesheet" href="./responsive.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <nav id="topNav" class="navbar nav">
         <div class="container">
           <div class="navContainer">
@@ -32,29 +39,36 @@
               aria-expanded="false"
               aria-controls="navbarDropdown"
             >
-              <span>&#9776;</span>
+              <span class="open">&#9776;</span>
+              <span class="close">&times;</span>
             </button>
+           
+
             <a class="navbar-brand" href="index.html"
               ><img
                 src="./saas-project-assets/project_logo/logo.svg"
                 alt="Front title-logo"
             /></a>
-            <ul class="navbar-nav">
+            <nav class="navbar-nav">
+              <ul class="thisNav">
               <li class="nav-link"><a href="index.html">Home</a></li>
-              <li class="nav-link highlighted"><a href="#">Features</a></li>
-              <li class="nav-link"><a href="#">Learn </a></li>
-              <li class="nav-link"><a href="#">Pricing</a></li>
-              <li class="nav-link"><a href="#">Hire Us</a></li>
-              <li class="nav-link nav-button"><a href="#">Buy Now</a></li>
+              <li class="nav-link highlighted"><a href="#features">Features</a></li>
+              <li class="nav-link"><a href="#learn">Learn</a></li>
+              <li class="nav-link"><a href="#pricing">Pricing</a></li>
+              <li class="nav-link"><a href="#hire-us">Hire Us</a></li>
             </ul>
-          </div>
+              <div class="nav-link nav-button"><a href="#">Buy Now</a></div>
+            
+            </nav>
+          
         </div>
       </nav>
+<section class="mainContent">
 
       <section class="brands container">
         <div class="brandsContainer">
           <div class="slogan">
-            <h2>Empowering <br />Teams with the <br />Freedom</h2>
+            <h2>Empowering<br />Teams with the<br />Freedom</h2>
             <p>Own the Unlimited Power of the web development</p>
             <div class="playVideo">
               <div class="playVideo-btn">
@@ -126,7 +140,7 @@
         <div class="solid"></div>
       </div>
     </header>
-    <section class="key-benefits container">
+    <section id="features" class="key-benefits container">
       <h2 class="headline">Key Benefits</h2>
       <p class="headline-text">
         Design faster with a growing array with beautiful templates
@@ -184,7 +198,7 @@
       <div class="banner-wrapper">
         <div class="tag-line">
           <h2>
-            Makes you look at things <br />
+            Front Makes you look at things <br />
             from a different prospective
           </h2>
           <div class="playVideo-btn">
@@ -193,10 +207,12 @@
             ><span><a href="#">Play Video</a></span>
           </div>
         </div>
-        <div class="banner"></div>
+        <div class="banner">
+     
+        </div>
       </div>
     </section>
-    <section class="why container">
+    <section id="learn" class="why container">
       <div class="why-front">
         <h2 class="headline">Why Front?</h2>
         <p class="headline-text">
@@ -294,7 +310,7 @@
         </li>
       </ul>
     </section>
-    <section class="pricing container">
+    <section id="pricing" class="pricing container">
       <h2 class="headline">Pricing</h2>
       <p class="headline-text">No additional cost. Pay for what you use.</p>
 
@@ -350,7 +366,7 @@
       </div>
     </section>
 
-    <section class="hireUs container">
+    <section id="hire-us" class="hireUs container">
       <div class="text-section">
         <div class="hire-us-comments">
           <h2>Hire Us</h2>
@@ -748,67 +764,128 @@ Tell us more about your project, needs, and timeline please...</textarea
               </li>
             </ul>
           </div>
-          <div class="company">
-            <h2>Company</h2>
-            <ul>
-              <li>About</li>
-              <li>Career <span class="hiring">We're hiring</span></li>
-              <li>Blog</li>
-              <li>Customers</li>
-              <li>Hire Us</li>
-            </ul>
-          </div>
-          <div class="features">
-            <h2>Features</h2>
-            <ul>
-              <li>Press</li>
-              <li class="highlighted">Release Notes</li>
-              <li>Integrated</li>
-              <li>Pricing</li>
-            </ul>
-          </div>
-          <div class="documentation">
-            <h2>Documentation</h2>
-            <ul>
-              <li>Support</li>
-              <li>Docs</li>
-              <li>Status</li>
-              <li>API Reference</li>
-              <li>Tech Requirement</li>
-            </ul>
-          </div>
-          <div class="Resources">
-            <h2>Resources</h2>
-            <ul>
-              <li>
-                <span
-                  ><i class="fa fa-info-circle" aria-hidden="true"></i
-                ></span>
-                Help
-              </li>
-              <li>
-                <span>
-                  <i class="fa fa-user-circle" aria-hidden="true"></i></span
-                >Your Account
-              </li>
-            </ul>
+          <div class="information">
+            <div class="company">
+              <h2>Company</h2>
+              <ul>
+                <li>About</li>
+                <li>Career <span class="hiring">We're hiring</span></li>
+                <li>Blog</li>
+                <li>Customers</li>
+                <li>Hire Us</li>
+              </ul>
+            </div>
+            <div class="features">
+              <h2>Features</h2>
+              <ul>
+                <li>Press</li>
+                <li class="highlighted">Release Notes</li>
+                <li>Integrated</li>
+                <li>Pricing</li>
+              </ul>
+            </div>
+            <div class="documentation">
+              <h2>Documentation</h2>
+              <ul>
+                <li>Support</li>
+                <li>Docs</li>
+                <li>Status</li>
+                <li>API Reference</li>
+                <li>Tech Requirement</li>
+              </ul>
+            </div>
+            <div class="resources">
+              <h2>Resources</h2>
+              <ul>
+                <li>
+                  <span
+                    ><i class="fa fa-info-circle" aria-hidden="true"></i
+                  ></span>
+                  Help
+                </li>
+                <li>
+                  <span>
+                    <i class="fa fa-user-circle" aria-hidden="true"></i></span
+                  >Your Account
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <hr />
         <div class="footer-bottom">
           <div class="top">
-          <div class="terms">
-            <h3>Privacy & Policy > <span class="highlighted">Terms</span> > Site Map</h3>
+            <div class="terms">
+              <h3>
+                Privacy & Policy > <span class="highlighted">Terms</span> > Site
+                Map
+              </h3>
+            </div>
+            <div class="bottom-right">
+            <div class="social-media">
+              <a class="facebook" href="https://www.facebook.com/">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a class="Google" href="https://www.google.com/">
+                <i class="fa fa-google" aria-hidden="true"></i>
+              </a>
+              <a class="Twitter" href="https://twitter.com/">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a class="Github" href="https://github.com/">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a> 
+            </div>
+              <div class="location">
+                <form action="#" method="get">
+                  <select value="siteLocation" id="siteLocation" class="siteLocation" >
+                      <option value="United States" selected><div class="locatonContainer"><div class="flag">&#127482;&#127480;</div><h3>       United States</h3></div></option>
+                      <option value="France" > <div class="locatonContainer"><div class="flag">&#127467;&#127479;</div> <h3>France</h3></div></option>
+                      <option value="Mexico" ><div class="locatonContainer"><div class="flag">&#127474;&#127485;</div><h3> Mexico</h3></div></option>
+                      <option value="Canada" ><div class="locatonContainer" > <div class="flag">&#127464;&#127462;</div> <h3> Canada</h3></div></option>
+                      <option value="United Kingdom" ><div class="locatonContainer"><div class="flag">&#127468;&#127463;</div> <h3> United Kingdom</h3></div></option>
+                      <option value="Australia" ><div class="locatonContainer"><div class="flag">&#127462;&#127482;</div> <h3> Australia</h3> </div></option>
+                      <option value="Japan" ><div class="locatonContainer"><div class="flag">&#127471;&#127477;</div> <h3> Japan</h3> </div></option>
+                      <option value="China" ><div class="locatonContainer"><div class="flag">&#127464;&#127475;</div> <h3> China</h3></div></option>
+                   
+                  </select>
+                </form>
+              </div>
+           </div>
           </div>
-          <div class="social-media">
-          <div class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-          <div class="Google"><i class="fa fa-google" aria-hidden="true"></i></div>
-          <div class="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-          <div class="Github"><i class="fa fa-github" aria-hidden="true"></i></div>
+          <div class="legal">
+            <h3>
+              <span>&copy;</span> Front. 2022 Responsive Designs All Rights
+              Reserved
+            </h3>
+            <p>
+              When you visit or interact with our sites, services or tools, we
+              or our authorised service providers may use cookies for storing
+              information to help provide you with a better, faster and safer
+              experience and for marketing purposes.
+            </p>
           </div>
-        </div>
         </div>
       </section>
     </footer>
+</section>
+    <script>
+      const nav = document.getElementById("topNav");
+      window.onscroll = function () {
+        if (window.pageYOffset > 5) {
+          nav.classList.add("sticky");
+        } else {
+          nav.classList.remove("sticky");
+        }
+      };
+
+      const navButton = document.querySelector("button[aria-expanded]");
+      function toggleNav({ target }) {
+        const expanded =
+          target.getAttribute("aria-expanded") === "true" || false;
+        navButton.setAttribute("aria-expanded", !expanded);
+      }
+      navButton.addEventListener("click", toggleNav);
+    </script>
   </body>
 </html>
