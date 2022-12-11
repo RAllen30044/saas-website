@@ -106,7 +106,7 @@ display: flex;
 }
 
 .brandsContainer {
-  margin-top: var(--size20);
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -150,13 +150,14 @@ display: flex;
 }
 
 .websitesContainer{
-  width: 50%
+  width: 50%;
+  height:500px;
 }
 .websites{
-width: -moz-fit-content;
-width: fit-content;
+
+  width: fit-content;
 position: relative;
-flex: 1;
+  height: 100%;
 }
 
 .logo{
@@ -183,7 +184,7 @@ flex: 1;
 .google{
   position: absolute;
   right: 0px;
-  bottom: 289px;
+  bottom: 370px;
 }
 
 
@@ -320,10 +321,11 @@ border-color: transparent var(--color-dark) transparent transparent;
 .banner-section{
   margin-top: var(--size150);
   display: flex;
-
+align-items: end;
   height: 470px;
   padding: var(--size30);
   background:  #F8FAFE;
+  margin-top: 50px;
 
 }
 
@@ -337,17 +339,17 @@ border-color: transparent var(--color-dark) transparent transparent;
 
 
 .banner{
-  background-image: url(./saas-project-assets/banners/banner_one.jpg);
- background-position: center;
-  background-size: cover;
+
   width: 100%;
+  padding: 20px;
 }
+
 
 
 .tag-line{
   
   width: 100%;
-
+  align-self: center;
 }
 
 .tag-line h2{
@@ -390,6 +392,9 @@ line-height: 31px;
   color: #0066FF;
  
 }
+
+
+
 .connect-wrapper{
 
  
@@ -426,9 +431,16 @@ content: "";
   color: black;
   font-style: normal;
 }
+.banner-vid{
+  margin: 0 20px;
+height: 414px;
+width: 100%;
+align-self: center;
+}
+
 .video-banner{
   background-image: url("./saas-project-assets/banners/banner_two.jpg");
- min-height: 414px;
+height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -456,23 +468,32 @@ content: "";
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  margin-top: var(--size100);
 }
 
+.lady{
+  display: flex;
+  width: 100%;
+  
+}
 .lady-on-graphics{
   height: 560px;
   width: 100%;
-  position: relative;
+ position: relative;
+ align-self: center;
+ display: flex;
+ justify-content: end;
 }
 .womanThree{
-  position: absolute;
   height: 425px;
-  width: 371px;
+  width: 85%;
   left: 81px;
   z-index: 1;
+
 }
 .dots{
-position: relative;
-top: 104px;
+position: absolute;
+top: 193px;
 height: 370px;
 width: 200px;
 left: 25px;
@@ -558,6 +579,7 @@ line-height: 19px;
 
 .headline, .headline-text{
 text-align: center;
+margin-bottom: 50px;
 }
 
 .pricingContainer{

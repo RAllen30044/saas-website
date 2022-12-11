@@ -116,18 +116,29 @@ text-align: center;
  
   align-self: center;
 }
-.banner-section{
-  height: 500px;
+.banner-vid{
+
+height: 304px;
+
+
 }
+ .banner-section{
+  margin-top: 350px;
+} 
 .banner{
  height: 100%;
  margin-top: 50px;
 }
+
+.banner img{
+  width: 100%;
+}
+
 .banner-wrapper{
   display: flex;
   width: 100%;
  
-  flex-wrap: wrap;
+  flex-direction: column;
 
 }
 .pricingVideo{
@@ -139,9 +150,18 @@ text-align: center;
 .why{
   margin-top: 150px;
 }
+
 .lady-on-graphics{
-  width:75%;
-  align-self: center;
+  justify-content: center;
+}
+.womanThree{
+  display: flex;
+    justify-content: center;
+}
+
+.womanThree img{
+  height: 450px;
+  width: 450px;;
 }
 
   .hubspot {
@@ -221,9 +241,52 @@ text-align: center;
   width: 75%;
 }
   .websitesContainer{
-    width: 100%;
+    width: 87%;
     
   }
+
+  .asana{
+   
+    top: 56px;
+    left: 248px
+  }
+  
+  .atlassian{
+   
+    bottom: 21px;
+    right: -113px;
+  }
+  .google{
+   
+    right: 0px;
+    bottom: 370px;
+  }
+  
+  
+  .google-A{
+   
+    right: -84px;
+    bottom: 43px;
+  }
+  
+  .calender{
+   
+    bottom: -161px;
+    right: -244px;
+  }
+  
+  .paypal{
+   
+    bottom: 38px;
+  }
+  .weave{
+
+    bottom: 134px;
+    right:   -192px;
+  }
+  
+  
+
 .companies{
   margin: 100px 0;
 }
@@ -265,6 +328,10 @@ content: normal;
  
 }
 
+.banner-vid{
+  height: 154px;
+}
+
  .nav-button{
   position: relative;
   right: 18px;
@@ -298,3 +365,4 @@ text-align: center;
     flex-direction: column;
   }
 }
+
